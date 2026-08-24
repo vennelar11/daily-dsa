@@ -1,0 +1,23 @@
+#countPairsWhoseSumIsLessThanTarget
+
+class Solution {
+public:
+    int countPairs(vector<int>& nums, int target) {
+        int count = 0, n = nums.size();
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (j == i)
+                {
+                    continue;
+                }
+                if (nums[i] + nums[j] < target)
+                {
+                    count++;
+                }
+            }
+        }
+        return count / 2;
+    }
+};
