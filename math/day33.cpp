@@ -1,4 +1,4 @@
-#countCommasInRange
+#countCommas
 
 class Solution {
 public:
